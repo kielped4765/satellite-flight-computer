@@ -5,18 +5,18 @@ events:
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:207 (message)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     message: |
       The target system is: Generic -  - arm
       The host system is: Windows - 10.0.19045 - AMD64
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt:10 (project)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
-    description: "Path to a program."
+    description: "Program used to build from build.ninja files."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -26,9 +26,9 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gmake"
-      - "make"
-      - "smake"
+      - "ninja-build"
+      - "ninja"
+      - "samu"
     candidate_directories:
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
@@ -51,68 +51,11 @@ events:
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/msys64/usr/bin/gmake.com"
-      - "C:/msys64/usr/bin/gmake.exe"
-      - "C:/msys64/usr/bin/gmake"
-      - "C:/Users/peder/bin/gmake.com"
-      - "C:/Users/peder/bin/gmake.exe"
-      - "C:/Users/peder/bin/gmake"
-      - "C:/Program Files/Git/mingw64/bin/gmake.com"
-      - "C:/Program Files/Git/mingw64/bin/gmake.exe"
-      - "C:/Program Files/Git/mingw64/bin/gmake"
-      - "C:/Program Files/Git/usr/local/bin/gmake.com"
-      - "C:/Program Files/Git/usr/local/bin/gmake.exe"
-      - "C:/Program Files/Git/usr/local/bin/gmake"
-      - "C:/Program Files/Git/usr/bin/gmake.com"
-      - "C:/Program Files/Git/usr/bin/gmake.exe"
-      - "C:/Program Files/Git/usr/bin/gmake"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake.com"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake.exe"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake.com"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake.exe"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/gmake.com"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/gmake.exe"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/gmake"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/gmake.com"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/gmake.exe"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/gmake"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/gmake.com"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/gmake.exe"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/gmake"
-      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/gmake.com"
-      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/gmake.exe"
-      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/gmake"
-      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/gmake.com"
-      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/gmake.exe"
-      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/gmake"
-      - "C:/Users/peder/.dotnet/tools/gmake.com"
-      - "C:/Users/peder/.dotnet/tools/gmake.exe"
-      - "C:/Users/peder/.dotnet/tools/gmake"
-      - "C:/Users/peder/AppData/Local/Python/bin/gmake.com"
-      - "C:/Users/peder/AppData/Local/Python/bin/gmake.exe"
-      - "C:/Users/peder/AppData/Local/Python/bin/gmake"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/gmake.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/gmake.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/gmake"
-      - "C:/Program Files/Git/usr/bin/core_perl/gmake.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/gmake.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/gmake"
-      - "C:/gmake.com"
-      - "C:/gmake.exe"
-      - "C:/gmake"
-      - "C:/arm-toolchain/bin/gmake.com"
-      - "C:/arm-toolchain/bin/gmake.exe"
-      - "C:/arm-toolchain/bin/gmake"
-      - "C:/msys64/mingw64/bin/gmake.com"
-      - "C:/msys64/mingw64/bin/gmake.exe"
-      - "C:/msys64/mingw64/bin/gmake"
-      - "C:/Program Files/CMake/bin/gmake.com"
-      - "C:/Program Files/CMake/bin/gmake.exe"
-      - "C:/Program Files/CMake/bin/gmake"
-      - "C:/msys64/usr/bin/make.com"
-    found: "C:/msys64/usr/bin/make.exe"
+      - "C:/msys64/usr/bin/ninja-build.com"
+      - "C:/msys64/usr/bin/ninja-build.exe"
+      - "C:/msys64/usr/bin/ninja-build"
+      - "C:/msys64/usr/bin/ninja.com"
+    found: "C:/msys64/usr/bin/ninja.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -136,164 +79,6 @@ events:
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)"
-      - "CMakeLists.txt:10 (project)"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "arm-none-eabi-gcc"
-    candidate_directories:
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/peder/.dotnet/tools/"
-      - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
-      - "C:/Program Files/CMake/bin/"
-    searched_directories:
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc.com"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc.exe"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc.com"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc.exe"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc.com"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc.exe"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc.com"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc.exe"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/arm-none-eabi-gcc"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/arm-none-eabi-gcc"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/arm-none-eabi-gcc"
-      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/arm-none-eabi-gcc"
-      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/arm-none-eabi-gcc"
-      - "C:/Users/peder/.dotnet/tools/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/.dotnet/tools/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/.dotnet/tools/arm-none-eabi-gcc"
-      - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc.com"
-      - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc.exe"
-      - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc"
-      - "C:/arm-none-eabi-gcc.com"
-      - "C:/arm-none-eabi-gcc.exe"
-      - "C:/arm-none-eabi-gcc"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-gcc.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
-        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\peder\\.dotnet\\tools"
-        - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
         - "C:\\"
         - "C:\\arm-toolchain\\bin"
         - "C:\\msys64\\mingw64\\bin"
@@ -307,7 +92,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -352,50 +137,32 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: C:/arm-toolchain/bin/arm-none-eabi-gcc.exe 
+      Compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc 
       Build flags: 
       Id flags:  
       
       The output was:
       1
-      C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-exit.o): in function `exit':
+      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-exit.o): in function `exit':
       exit.c:(.text.exit+0x28): undefined reference to `_exit'
-      C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-closer.o): in function `_close_r':
+      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-closer.o): in function `_close_r':
       closer.c:(.text._close_r+0x18): undefined reference to `_close'
-      C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
       lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
-      C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-readr.o): in function `_read_r':
+      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-readr.o): in function `_read_r':
       readr.c:(.text._read_r+0x24): undefined reference to `_read'
-      C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-writer.o): in function `_write_r':
+      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-writer.o): in function `_write_r':
       writer.c:(.text._write_r+0x24): undefined reference to `_write'
-      C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
       sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
       collect2.exe: error: ld returned 1 exit status
       
@@ -408,7 +175,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -453,34 +220,16 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/arm-toolchain/bin/arm-none-eabi-gcc.exe 
+      Compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc 
       Build flags: 
       Id flags: -c 
       
@@ -498,7 +247,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -514,7 +263,7 @@ events:
       - "arm-none-eabi-ar"
       - "ar"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -532,11 +281,12 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-ar.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-ar.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ar.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ar.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -565,30 +315,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -604,7 +336,7 @@ events:
       - "arm-none-eabi-ranlib"
       - "ranlib"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -622,11 +354,12 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-ranlib.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-ranlib.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ranlib.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ranlib.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -655,30 +388,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -694,7 +409,7 @@ events:
       - "arm-none-eabi-strip"
       - "strip"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -712,11 +427,12 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-strip.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-strip.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-strip.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-strip.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -745,30 +461,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -784,7 +482,7 @@ events:
       - "arm-none-eabi-ld"
       - "ld"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -802,11 +500,12 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-ld.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-ld.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ld.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ld.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -835,30 +534,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -874,7 +555,7 @@ events:
       - "arm-none-eabi-nm"
       - "nm"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -892,11 +573,12 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-nm.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-nm.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-nm.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-nm.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -925,30 +607,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -964,7 +628,7 @@ events:
       - "arm-none-eabi-objdump"
       - "objdump"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -982,11 +646,12 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-objdump.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-objdump.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objdump.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objdump.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -1015,30 +680,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -1054,7 +701,7 @@ events:
       - "arm-none-eabi-readelf"
       - "readelf"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -1072,11 +719,12 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-readelf.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-readelf.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-readelf.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-readelf.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -1105,30 +753,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -1144,7 +774,7 @@ events:
       - "arm-none-eabi-dlltool"
       - "dlltool"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -1162,12 +792,13 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-dlltool.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-dlltool.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-dlltool"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-dlltool.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-dlltool.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-dlltool"
       - "C:/msys64/usr/bin/arm-none-eabi-dlltool.com"
       - "C:/msys64/usr/bin/arm-none-eabi-dlltool.exe"
       - "C:/msys64/usr/bin/arm-none-eabi-dlltool"
@@ -1219,15 +850,18 @@ events:
       - "C:/arm-none-eabi-dlltool.com"
       - "C:/arm-none-eabi-dlltool.exe"
       - "C:/arm-none-eabi-dlltool"
+      - "C:/arm-toolchain/bin/arm-none-eabi-dlltool.com"
+      - "C:/arm-toolchain/bin/arm-none-eabi-dlltool.exe"
+      - "C:/arm-toolchain/bin/arm-none-eabi-dlltool"
       - "C:/msys64/mingw64/bin/arm-none-eabi-dlltool.com"
       - "C:/msys64/mingw64/bin/arm-none-eabi-dlltool.exe"
       - "C:/msys64/mingw64/bin/arm-none-eabi-dlltool"
       - "C:/Program Files/CMake/bin/arm-none-eabi-dlltool.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-dlltool.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-dlltool"
-      - "C:/arm-toolchain/bin/dlltool.com"
-      - "C:/arm-toolchain/bin/dlltool.exe"
-      - "C:/arm-toolchain/bin/dlltool"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/dlltool.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/dlltool.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/dlltool"
       - "C:/msys64/usr/bin/dlltool.com"
       - "C:/msys64/usr/bin/dlltool.exe"
       - "C:/msys64/usr/bin/dlltool"
@@ -1279,6 +913,9 @@ events:
       - "C:/dlltool.com"
       - "C:/dlltool.exe"
       - "C:/dlltool"
+      - "C:/arm-toolchain/bin/dlltool.com"
+      - "C:/arm-toolchain/bin/dlltool.exe"
+      - "C:/arm-toolchain/bin/dlltool"
       - "C:/msys64/mingw64/bin/dlltool.com"
       - "C:/msys64/mingw64/bin/dlltool.exe"
       - "C:/msys64/mingw64/bin/dlltool"
@@ -1314,30 +951,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -1353,7 +972,7 @@ events:
       - "arm-none-eabi-addr2line"
       - "addr2line"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -1371,11 +990,12 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-addr2line.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-addr2line.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-addr2line.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-addr2line.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -1404,30 +1024,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -1443,7 +1045,7 @@ events:
       - "arm-none-eabi-tapi"
       - "tapi"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -1461,12 +1063,13 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-tapi.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-tapi.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-tapi"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-tapi.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-tapi.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-tapi"
       - "C:/msys64/usr/bin/arm-none-eabi-tapi.com"
       - "C:/msys64/usr/bin/arm-none-eabi-tapi.exe"
       - "C:/msys64/usr/bin/arm-none-eabi-tapi"
@@ -1518,15 +1121,18 @@ events:
       - "C:/arm-none-eabi-tapi.com"
       - "C:/arm-none-eabi-tapi.exe"
       - "C:/arm-none-eabi-tapi"
+      - "C:/arm-toolchain/bin/arm-none-eabi-tapi.com"
+      - "C:/arm-toolchain/bin/arm-none-eabi-tapi.exe"
+      - "C:/arm-toolchain/bin/arm-none-eabi-tapi"
       - "C:/msys64/mingw64/bin/arm-none-eabi-tapi.com"
       - "C:/msys64/mingw64/bin/arm-none-eabi-tapi.exe"
       - "C:/msys64/mingw64/bin/arm-none-eabi-tapi"
       - "C:/Program Files/CMake/bin/arm-none-eabi-tapi.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-tapi.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-tapi"
-      - "C:/arm-toolchain/bin/tapi.com"
-      - "C:/arm-toolchain/bin/tapi.exe"
-      - "C:/arm-toolchain/bin/tapi"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/tapi.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/tapi.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/tapi"
       - "C:/msys64/usr/bin/tapi.com"
       - "C:/msys64/usr/bin/tapi.exe"
       - "C:/msys64/usr/bin/tapi"
@@ -1578,6 +1184,9 @@ events:
       - "C:/tapi.com"
       - "C:/tapi.exe"
       - "C:/tapi"
+      - "C:/arm-toolchain/bin/tapi.com"
+      - "C:/arm-toolchain/bin/tapi.exe"
+      - "C:/arm-toolchain/bin/tapi"
       - "C:/msys64/mingw64/bin/tapi.com"
       - "C:/msys64/mingw64/bin/tapi.exe"
       - "C:/msys64/mingw64/bin/tapi"
@@ -1613,30 +1222,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1654,7 +1245,7 @@ events:
       - "arm-none-eabi-gcc-ar15"
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -1672,12 +1263,13 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.2"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.2.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.2.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.2"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.2.com"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.2.exe"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.2"
@@ -1729,15 +1321,18 @@ events:
       - "C:/arm-none-eabi-gcc-ar-15.2.com"
       - "C:/arm-none-eabi-gcc-ar-15.2.exe"
       - "C:/arm-none-eabi-gcc-ar-15.2"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.2.com"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.2.exe"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.2"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.2.com"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.2.exe"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.2"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.2.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.2.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.2"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.com"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.exe"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15"
@@ -1789,15 +1384,18 @@ events:
       - "C:/arm-none-eabi-gcc-ar-15.com"
       - "C:/arm-none-eabi-gcc-ar-15.exe"
       - "C:/arm-none-eabi-gcc-ar-15"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.com"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.exe"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.com"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.exe"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar15.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar15.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar15"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar15.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar15.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar15"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar15.com"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar15.exe"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar15"
@@ -1849,14 +1447,17 @@ events:
       - "C:/arm-none-eabi-gcc-ar15.com"
       - "C:/arm-none-eabi-gcc-ar15.exe"
       - "C:/arm-none-eabi-gcc-ar15"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar15.com"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar15.exe"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar15"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar15.com"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar15.exe"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar15"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar15.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar15.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar15"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -1885,30 +1486,12 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:10 (project)"
+      - "CMakeLists.txt:16 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1926,7 +1509,7 @@ events:
       - "arm-none-eabi-gcc-ranlib15"
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
-      - "C:/arm-toolchain/bin/"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Users/peder/bin/"
       - "C:/Program Files/Git/mingw64/bin/"
@@ -1944,12 +1527,13 @@ events:
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/"
+      - "C:/arm-toolchain/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
     searched_directories:
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.2.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.2.com"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.2"
@@ -2001,15 +1585,18 @@ events:
       - "C:/arm-none-eabi-gcc-ranlib-15.2.com"
       - "C:/arm-none-eabi-gcc-ranlib-15.2.exe"
       - "C:/arm-none-eabi-gcc-ranlib-15.2"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.2.com"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.2.com"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.2.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.com"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.exe"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15"
@@ -2061,15 +1648,18 @@ events:
       - "C:/arm-none-eabi-gcc-ranlib-15.com"
       - "C:/arm-none-eabi-gcc-ranlib-15.exe"
       - "C:/arm-none-eabi-gcc-ranlib-15"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.com"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.exe"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.com"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.exe"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib15"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib15.com"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib15.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib15"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib15.com"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib15.exe"
       - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib15"
@@ -2121,14 +1711,17 @@ events:
       - "C:/arm-none-eabi-gcc-ranlib15.com"
       - "C:/arm-none-eabi-gcc-ranlib15.exe"
       - "C:/arm-none-eabi-gcc-ranlib15"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib15.com"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib15.exe"
+      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib15"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib15.com"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib15.exe"
       - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib15"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib15.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib15.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib15"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib.com"
-    found: "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib.exe"
+      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib.com"
+    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\usr\\bin"
@@ -2157,174 +1750,4 @@ events:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:10 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-hunenw"
-      binary: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-hunenw"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-hunenw'
-        
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/usr/bin/make.exe -f Makefile cmTC_5ce11/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_5ce11.dir/build.make CMakeFiles/cmTC_5ce11.dir/build
-        make[1]: Entering directory '/c/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-hunenw'
-        Building C object CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj
-        C:/arm-toolchain/bin/arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"
-        Using built-in specs.
-        COLLECT_GCC=C:\\arm-toolchain\\bin\\arm-none-eabi-gcc.exe
-        Target: arm-none-eabi
-        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-15/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://gitlab.arm.com/tooling/gnu-devtools-for-arm/-/issues/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=i686-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)'
-        Thread model: single
-        Supported LTO compression algorithms: zlib
-        gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_5ce11.dir/'
-         C:/arm-toolchain/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1.exe -quiet -v -iprefix C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot C:/arm-toolchain/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5ce11.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o C:\\Users\\peder\\AppData\\Local\\Temp\\cckaXhdl.s
-        GNU C23 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)
-        	compiled by GNU C version 13-win32, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "C:/arm-toolchain/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include"
-        ignoring nonexistent directory "C:/arm-toolchain/bin/../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/15.2.1/../../../../include"
-        ignoring duplicate directory "C:/arm-toolchain/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include-fixed"
-        ignoring duplicate directory "C:/arm-toolchain/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include"
-        ignoring duplicate directory "C:/arm-toolchain/bin/../arm-none-eabi/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/include
-         C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed
-         C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include
-        End of search list.
-        Compiler executable checksum: 06ab445c59ba8f89bbf09b9a069e4cf7
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_5ce11.dir/'
-         C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj C:\\Users\\peder\\AppData\\Local\\Temp\\cckaXhdl.s
-        GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203
-        COMPILER_PATH=C:/arm-toolchain/bin/../libexec/gcc/arm-none-eabi/15.2.1/;C:/arm-toolchain/bin/../libexec/gcc/;C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/;C:/arm-toolchain/bin/../lib/gcc/;C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/;C:/arm-toolchain/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.'
-        Linking C static library libcmTC_5ce11.a
-        "C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_5ce11.dir/cmake_clean_target.cmake
-        "C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_5ce11.dir/link.txt --verbose=1
-        C:/arm-toolchain/bin/arm-none-eabi-ar.exe qc libcmTC_5ce11.a CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj
-        C:/arm-toolchain/bin/arm-none-eabi-ranlib.exe libcmTC_5ce11.a
-        make[1]: Leaving directory '/c/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-hunenw'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:10 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/include]
-          add: [C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed]
-          add: [C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
-        end of search list found
-        collapse include dir [C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/include] ==> [C:/arm-toolchain/lib/gcc/arm-none-eabi/15.2.1/include]
-        collapse include dir [C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed] ==> [C:/arm-toolchain/lib/gcc/arm-none-eabi/15.2.1/include-fixed]
-        collapse include dir [C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include] ==> [C:/arm-toolchain/arm-none-eabi/include]
-        implicit include dirs: [C:/arm-toolchain/lib/gcc/arm-none-eabi/15.2.1/include;C:/arm-toolchain/lib/gcc/arm-none-eabi/15.2.1/include-fixed;C:/arm-toolchain/arm-none-eabi/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:10 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-hunenw']
-        ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/usr/bin/make.exe -f Makefile cmTC_5ce11/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_5ce11.dir/build.make CMakeFiles/cmTC_5ce11.dir/build]
-        ignore line: [make[1]: Entering directory '/c/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-hunenw']
-        ignore line: [Building C object CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:/arm-toolchain/bin/arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\arm-toolchain\\bin\\arm-none-eabi-gcc.exe]
-        ignore line: [Target: arm-none-eabi]
-        ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-15/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://gitlab.arm.com/tooling/gnu-devtools-for-arm/-/issues/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=i686-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)']
-        ignore line: [Thread model: single]
-        ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_5ce11.dir/']
-        ignore line: [ C:/arm-toolchain/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1.exe -quiet -v -iprefix C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot C:/arm-toolchain/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5ce11.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o C:\\Users\\peder\\AppData\\Local\\Temp\\cckaXhdl.s]
-        ignore line: [GNU C23 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)]
-        ignore line: [	compiled by GNU C version 13-win32  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "C:/arm-toolchain/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include"]
-        ignore line: [ignoring nonexistent directory "C:/arm-toolchain/bin/../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/15.2.1/../../../../include"]
-        ignore line: [ignoring duplicate directory "C:/arm-toolchain/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include-fixed"]
-        ignore line: [ignoring duplicate directory "C:/arm-toolchain/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include"]
-        ignore line: [ignoring duplicate directory "C:/arm-toolchain/bin/../arm-none-eabi/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/include]
-        ignore line: [ C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed]
-        ignore line: [ C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: 06ab445c59ba8f89bbf09b9a069e4cf7]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_5ce11.dir/']
-        ignore line: [ C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj C:\\Users\\peder\\AppData\\Local\\Temp\\cckaXhdl.s]
-        ignore line: [GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203]
-        ignore line: [COMPILER_PATH=C:/arm-toolchain/bin/../libexec/gcc/arm-none-eabi/15.2.1/]
-        ignore line: [C:/arm-toolchain/bin/../libexec/gcc/]
-        ignore line: [C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/]
-        ignore line: [LIBRARY_PATH=C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/]
-        ignore line: [C:/arm-toolchain/bin/../lib/gcc/]
-        ignore line: [C:/arm-toolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/]
-        ignore line: [C:/arm-toolchain/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C static library libcmTC_5ce11.a]
-        ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_5ce11.dir/cmake_clean_target.cmake]
-        ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_5ce11.dir/link.txt --verbose=1]
-        ignore line: [C:/arm-toolchain/bin/arm-none-eabi-ar.exe qc libcmTC_5ce11.a CMakeFiles/cmTC_5ce11.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:/arm-toolchain/bin/arm-none-eabi-ranlib.exe libcmTC_5ce11.a]
-        ignore line: [make[1]: Leaving directory '/c/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-hunenw']
-        ignore line: []
-        ignore line: []
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
 ...
