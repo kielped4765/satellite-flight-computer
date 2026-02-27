@@ -13,7 +13,10 @@ set(CMAKE_C_COMPILER
 set(CMAKE_OBJCOPY
     "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objcopy.exe")
 
-project(SatelliteFC C)
+set(CMAKE_EXE_LINKER_FLAGS
+ "${CPU_FLAGS} -T ${CMAKE_SOURCE_DIR}/linker.ld -nostdlib --specs=nosys.specs -Wl,--gc-sections -Wl,-Map=satellite_fc.map -lm")
+
+ project(SatelliteFC C)
 
 # -------------------------------------------------------------------
 # Source files
@@ -79,10 +82,10 @@ target_include_directories(satellite_fc.elf PRIVATE
 # -------------------------------------------------------------------
 
 set(CPU_FLAGS
-    -mcpu=cortex-m4
+    -mcpu=cortex-m3
     -mthumb
     -mfpu=fpv4-sp-d16
-    -mfloat-abi=hard
+    -mfloat-abi=soft
 )
 
 target_compile_options(satellite_fc.elf PRIVATE

@@ -46,7 +46,7 @@ build cmake_object_order_depends_target_satellite_fc.elf: phony || .
 
 build CMakeFiles/satellite_fc.elf.dir/src/startup.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/src/startup.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\src\startup.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\src
@@ -54,7 +54,7 @@ build CMakeFiles/satellite_fc.elf.dir/src/startup.c.obj: C_COMPILER__satellite_f
 
 build CMakeFiles/satellite_fc.elf.dir/src/main.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/src/main.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\src\main.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\src
@@ -62,7 +62,7 @@ build CMakeFiles/satellite_fc.elf.dir/src/main.c.obj: C_COMPILER__satellite_fc.2
 
 build CMakeFiles/satellite_fc.elf.dir/src/tasks/adcs_task.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/src/tasks/adcs_task.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\src\tasks\adcs_task.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\src\tasks
@@ -70,7 +70,7 @@ build CMakeFiles/satellite_fc.elf.dir/src/tasks/adcs_task.c.obj: C_COMPILER__sat
 
 build CMakeFiles/satellite_fc.elf.dir/src/tasks/telemetry_task.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/src/tasks/telemetry_task.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\src\tasks\telemetry_task.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\src\tasks
@@ -78,7 +78,7 @@ build CMakeFiles/satellite_fc.elf.dir/src/tasks/telemetry_task.c.obj: C_COMPILER
 
 build CMakeFiles/satellite_fc.elf.dir/src/tasks/health_monitor.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/src/tasks/health_monitor.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\src\tasks\health_monitor.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\src\tasks
@@ -86,7 +86,7 @@ build CMakeFiles/satellite_fc.elf.dir/src/tasks/health_monitor.c.obj: C_COMPILER
 
 build CMakeFiles/satellite_fc.elf.dir/src/tasks/command_handler.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/src/tasks/command_handler.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\src\tasks\command_handler.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\src\tasks
@@ -94,7 +94,7 @@ build CMakeFiles/satellite_fc.elf.dir/src/tasks/command_handler.c.obj: C_COMPILE
 
 build CMakeFiles/satellite_fc.elf.dir/src/drivers/uart_driver.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/src/drivers/uart_driver.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\src\drivers\uart_driver.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\src\drivers
@@ -102,7 +102,7 @@ build CMakeFiles/satellite_fc.elf.dir/src/drivers/uart_driver.c.obj: C_COMPILER_
 
 build CMakeFiles/satellite_fc.elf.dir/src/drivers/watchdog.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/src/drivers/watchdog.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\src\drivers\watchdog.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\src\drivers
@@ -110,7 +110,7 @@ build CMakeFiles/satellite_fc.elf.dir/src/drivers/watchdog.c.obj: C_COMPILER__sa
 
 build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/tasks.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/FreeRTOS/Source/tasks.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source\tasks.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source
@@ -118,7 +118,7 @@ build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/tasks.c.obj: C_COMPILER__s
 
 build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/queue.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/FreeRTOS/Source/queue.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source\queue.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source
@@ -126,7 +126,7 @@ build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/queue.c.obj: C_COMPILER__s
 
 build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/list.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/FreeRTOS/Source/list.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source\list.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source
@@ -134,7 +134,7 @@ build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/list.c.obj: C_COMPILER__sa
 
 build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/event_groups.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/FreeRTOS/Source/event_groups.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source\event_groups.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source
@@ -142,7 +142,7 @@ build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/event_groups.c.obj: C_COMP
 
 build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/timers.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/FreeRTOS/Source/timers.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source\timers.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source
@@ -150,7 +150,7 @@ build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/timers.c.obj: C_COMPILER__
 
 build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source\portable\GCC\ARM_CM4F
@@ -158,7 +158,7 @@ build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/portable/GCC/ARM_CM4F/port
 
 build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/MemMang/heap_4.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source\portable\MemMang\heap_4.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\FreeRTOS\Source\portable\MemMang
@@ -166,7 +166,7 @@ build CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/portable/MemMang/heap_4.c.
 
 build CMakeFiles/satellite_fc.elf.dir/src/syscalls.c.obj: C_COMPILER__satellite_fc.2eelf_unscanned_ C$:/Users/peder/satellite-flight-computer/src/syscalls.c || cmake_object_order_depends_target_satellite_fc.elf
   DEP_FILE = CMakeFiles\satellite_fc.elf.dir\src\syscalls.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
+  FLAGS = -mcpu=cortex-m3 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=soft -O2 -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -fno-common
   INCLUDES = -IC:/Users/peder/satellite-flight-computer/src -IC:/Users/peder/satellite-flight-computer/src/common -IC:/Users/peder/satellite-flight-computer/src/drivers -IC:/Users/peder/satellite-flight-computer/src/tasks -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/include -IC:/Users/peder/satellite-flight-computer/FreeRTOS/Source/portable/GCC/ARM_CM4F
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\satellite_fc.elf.dir\src
@@ -181,7 +181,7 @@ build CMakeFiles/satellite_fc.elf.dir/src/syscalls.c.obj: C_COMPILER__satellite_
 # Link the executable satellite_fc.elf
 
 build satellite_fc.elf: C_EXECUTABLE_LINKER__satellite_fc.2eelf_ CMakeFiles/satellite_fc.elf.dir/src/startup.c.obj CMakeFiles/satellite_fc.elf.dir/src/main.c.obj CMakeFiles/satellite_fc.elf.dir/src/tasks/adcs_task.c.obj CMakeFiles/satellite_fc.elf.dir/src/tasks/telemetry_task.c.obj CMakeFiles/satellite_fc.elf.dir/src/tasks/health_monitor.c.obj CMakeFiles/satellite_fc.elf.dir/src/tasks/command_handler.c.obj CMakeFiles/satellite_fc.elf.dir/src/drivers/uart_driver.c.obj CMakeFiles/satellite_fc.elf.dir/src/drivers/watchdog.c.obj CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/tasks.c.obj CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/queue.c.obj CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/list.c.obj CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/event_groups.c.obj CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/timers.c.obj CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj CMakeFiles/satellite_fc.elf.dir/FreeRTOS/Source/portable/MemMang/heap_4.c.obj CMakeFiles/satellite_fc.elf.dir/src/syscalls.c.obj
-  LINK_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wl,--gc-sections -Wl,-Map=satellite_fc.map --specs=nosys.specs --specs=nano.specs
+  LINK_FLAGS = -T C:/Users/peder/satellite-flight-computer/linker.ld -nostdlib --specs=nosys.specs -Wl,--gc-sections -Wl,-Map=satellite_fc.map -lm -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wl,--gc-sections -Wl,-Map=satellite_fc.map --specs=nosys.specs --specs=nano.specs
   LINK_LIBRARIES = -lc  -lm  -lgcc
   OBJECT_DIR = CMakeFiles\satellite_fc.elf.dir
   POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\peder\satellite-flight-computer\build && C:\toolchains\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-objcopy.exe -O binary satellite_fc.elf satellite_fc.bin && C:\toolchains\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-objcopy.exe -O ihex satellite_fc.elf satellite_fc.hex && C:\toolchains\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-size.exe satellite_fc.elf"
