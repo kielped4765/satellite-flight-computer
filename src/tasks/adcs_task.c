@@ -43,14 +43,14 @@ void adcs_task(void *p) {
     memset(&g_adcs_state, 0, sizeof(g_adcs_state));
     g_adcs_state.mode = MODE_NOMINAL;
 
-    TicketType_t xLastWake = xTaskGetTickCount();
+    TickType_t xLastWake = xTaskGetTickCount();
     const TickType_t xPeriod = pdMS_TO_TICKS(20);  /* 50 Hz */
     
     for (;;) {
         /* vTaskDelayUntill = deterministic 50 Hz regardless of exec time */
         vTaskDelayUntil (&xLastWake, xPeriod);
 
-        ADCSState_t new_state;
+        ADCSState_t new_state = {0};
         simulate_sensors(&new_state);
 
         new_state.mode = g_adcs_state.mode;  /* Preserve command mode */

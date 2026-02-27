@@ -1,0 +1,3 @@
+C:/Users/peder/satellite-flight-computer/build/CMakeFiles/satellite_fc.elf.dir
+C:/Users/peder/satellite-flight-computer/build/CMakeFiles/edit_cache.dir
+C:/Users/peder/satellite-flight-computer/build/CMakeFiles/rebuild_cache.dir

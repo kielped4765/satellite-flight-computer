@@ -2,6 +2,7 @@
 #include "task.h"
 #include "flight_types.h"
 #include "uart_driver.h"
+#include "semphr.h"
 
 extern ADCSState_t          g_adcs_state;
 extern SemaphoreHandle_t    g_adcs_mutex;
@@ -20,7 +21,7 @@ void command_handler_task(void*p) {
     for (;;) {
         if (uart_getc(&byte, 1000) == 0) continue; /* 1s timeout, retry */
 
-        art_printf("[CMD] Rx: 0x%02X ('%c')\r\n", byte, byte);
+        uart_printf("[CMD] Rx: 0x%02X ('%c')\r\n", byte, byte);
 
         switch ((char)byte) {
             case CMD_NOMINAL:

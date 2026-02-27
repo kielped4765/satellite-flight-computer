@@ -11,12 +11,12 @@
  =========================================================== */
 
 typedef struct {
-        float quaternion[4];        /*  Attitude quaternion [w, x, y, z] */
-        float omega[3];             /*  Angular velocity in body frame [rad/s] */
-        float euler[3];             /*  Euler angles in radians [roll, pitch, yaw] */
-        uint32_t timestamp_ms;      /* Mission elapsed time in milliseconds */
-        uint8_t mode;               /* Current operating mode (FlightMode_t) */
-}    ADCSState_t;
+    float quaternion[4];        /*  Attitude quaternion [w, x, y, z] */
+    float omega[3];             /*  Angular velocity in body frame [rad/s] */
+    float euler[3];             /*  Euler angles in radians [roll, pitch, yaw] */
+    uint32_t timestamp_ms;      /* Mission elapsed time in milliseconds */
+    uint8_t mode;               /* Current operating mode (FlightMode_t) */
+} ADCSState_t;
 
 /* ===========================================================
     TELEMETRY PACKET (binary wire format sent over UART)
@@ -39,9 +39,8 @@ typedef struct {
     uint8_t fault_flags;     /* Bitmask - see Fault_ * defines below */
     int16_t temperature;    /* Degrees C * 10 e.g. 235 = 23.5 C */
     uint16_t checksum;      /* XOR of all prteceding bytes */
-}   TelemetryPacket_t;
+}  TelemetryPacket_t;
 
-#pragma pack(pop)
 
 /* ===========================================================
  FAULT FLAGS (bitmask stored in fault_flags field)

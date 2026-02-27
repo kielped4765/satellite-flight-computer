@@ -20,7 +20,7 @@
 /* Global handles - extern'd by task files that need them */
 QueueHandle_t g_telemetry_queue   = NULL;
 QueueHandle_t g_command_queue     = NULL;
-TaskHandle_t g_adce_task_handle  = NULL;
+TaskHandle_t g_adcs_task_handle  = NULL;
 
 /* Forward declarations */
 void adcs_task(void *p);
@@ -42,7 +42,7 @@ int main(void) {
 
     /* Spawn tasks */
     configASSERT(xTaskCreate(adcs_task, "ADCS" , STACK_ADCS, NULL,
-PRIORITY_ADCS, &g_adce_task_handle) == pdPASS);
+PRIORITY_ADCS, &g_adcs_task_handle) == pdPASS);
     configASSERT(xTaskCreate(telemetry_task, "TLM" , STACK_TELEMETRY, NULL,
 PRIORITY_TELEMETRY, NULL) == pdPASS);
     configASSERT(xTaskCreate(health_monitor_task, "HLT" , STACK_HEALTH, NULL,

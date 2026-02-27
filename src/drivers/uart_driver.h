@@ -3,6 +3,10 @@
 
 #include <stdint.h>
 #include <stddef.h>
+#include "FreeRTOS.h"
+#include "task.h"
+#include "semphr.h"
+
 
 void uart_init(uint32_t baud_rate);
 void uart_putc(char c);

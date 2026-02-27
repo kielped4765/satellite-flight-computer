@@ -24,8 +24,8 @@ CMAKE_AR:FILEPATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-n
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:UNINITIALIZED=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc
+//C compiler
+CMAKE_C_COMPILER:STRING=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -83,8 +83,8 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/SatelliteFC
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ld.exe
 
-//Program used to build from build.ninja files.
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/msys64/usr/bin/ninja.exe
+//make program
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/Ninja/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -110,7 +110,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_NM:FILEPATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-nm.exe
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objcopy
+CMAKE_OBJCOPY:FILEPATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objcopy.exe
 
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objdump.exe

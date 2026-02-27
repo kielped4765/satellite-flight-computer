@@ -8,10 +8,10 @@ set(CMAKE_SYSTEM_PROCESSOR arm)
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 set(CMAKE_C_COMPILER
-    "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc")
+    "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe")
 
 set(CMAKE_OBJCOPY
-    "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objcopy")
+    "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objcopy.exe")
 
 project(SatelliteFC C)
 
@@ -47,6 +47,17 @@ set(FREERTOS_SRC
 add_executable(satellite_fc.elf
     ${APP_SRC}
     ${FREERTOS_SRC}
+    
+)
+
+target_link_libraries(satellite_fc.elf
+    c
+    m
+    gcc
+)
+
+target_sources(satellite_fc.elf PRIVATE
+    src/syscalls.c
 )
 
 # -------------------------------------------------------------------
@@ -90,14 +101,18 @@ target_compile_options(satellite_fc.elf PRIVATE
 # -------------------------------------------------------------------
 
 target_link_options(satellite_fc.elf PRIVATE
-    ${CPU_FLAGS}
-    -T${CMAKE_SOURCE_DIR}/linker.ld
-    -nostdlib
-    --specs=nosys.specs
+    -mcpu=cortex-m4
+    -mthumb
+    -mfpu=fpv4-sp-d16
+    -mfloat-abi=hard
+
     -Wl,--gc-sections
     -Wl,-Map=satellite_fc.map
-    -lm
+
+    --specs=nosys.specs
+    --specs=nano.specs
 )
+
 
 # -------------------------------------------------------------------
 # Post-build artifacts
@@ -106,7 +121,7 @@ target_link_options(satellite_fc.elf PRIVATE
 add_custom_command(TARGET satellite_fc.elf POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} -O binary satellite_fc.elf satellite_fc.bin
     COMMAND ${CMAKE_OBJCOPY} -O ihex   satellite_fc.elf satellite_fc.hex
-    COMMAND arm-none-eabi-size satellite_fc.elf
+    COMMAND "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-size.exe" satellite_fc.elf
     COMMENT "Generating .bin, .hex, and size info"
 )
     

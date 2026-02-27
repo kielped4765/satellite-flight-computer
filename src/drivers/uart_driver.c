@@ -21,7 +21,7 @@
 #define UART_LCRH_WLEN8 (0x3u << 5)
 #define UART_LCRH_FEN (1u << 4)
 
-static SeamaphoreHandle_t uart_mutex = NULL;
+static SemaphoreHandle_t uart_mutex = NULL;
 
 void uart_init(uint32_t baud_rate) {
     UART0_CTL = 0;

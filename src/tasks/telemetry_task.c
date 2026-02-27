@@ -2,6 +2,7 @@
 #include "task.h"
 #include "flight_types.h"
 #include "uart_driver.h"
+#include "semphr.h"
 
 extern ADCSState_t          g_adcs_state;
 extern SemaphoreHandle_t    g_adcs_mutex;
