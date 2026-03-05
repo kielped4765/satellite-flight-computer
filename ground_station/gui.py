@@ -1,3 +1,4 @@
+import cmd
 import tkinter as tk
 from turtle import right
 import serial, threading, queue
@@ -121,28 +122,45 @@ class GroundStation:
             self._tick()
 
     def _rx(self):
-        """Background thread: read serial bytes, find packets, push to queue."""
+        print("_rx thread started")
         try:
-            ser = serial.Serial(self.port, self.baud, timeout=1)
+            import socket
+            sock = socket.create_connection(('localhost', 5555), timeout=5)
+            print("Connected!")
+            sock.settimeout(1.0)
             buf = bytearray()
             while self.running:
-                data = ser.read(256)
-                if data:
-                    buf.extend(data)
-                    pkt, consumed = find_packet(buf)
-                    buf = buf[consumed:]
-                    if pkt and not self.q.full():
-                        self.q.put(pkt)
-        except serial.SerialException as e:
-            print(f"Serial error: {e}")
+                try:
+                    data = sock.recv(256)
+                    if data:
+                        buf.extend(data)
+                        print(f"buf size: {len(buf)}")
+                        while len(buf) >= 46:  # TLM_SIZE = 46 bytes
+                            pkt, consumed = find_packet(buf)
+                            if pkt:
+                                print(f"PKT roll={pkt['roll']:.2f}")
+                                self.q.put(pkt)
+                                buf = buf[consumed:]
+                            else:
+                                buf = buf[consumed:]
+                                break
+                except socket.timeout:
+                    continue
+            sock.close()
+        except Exception as e:
+            print(f"Socket error: {e}")
             self.running = False
- 
+            
     def _tick(self):
         """Main thread: drain queue, update labels and plot every 500 ms."""
-        while not self.q.empty():
-            self._update(self.q.get_nowait())
-        if self.running:
-            self.root.after(500, self._tick)
+        try:
+            print(f"tick - queue size: {self.q.qsize()}")
+            while not self.q.empty():
+                self._update(self.q.get_nowait())
+            if self.running:
+                self.root.after(500, self._tick)
+        except Exception as e:
+            print(f"Tick error: {e}")
  
     def _update(self, pkt):
         self.pkt_count += 1
@@ -174,15 +192,13 @@ class GroundStation:
         self.ax1.set_title("Attitude (deg)", color="white")
         self.ax1.legend(loc="upper right", fontsize=8)
         self.ax1.set_facecolor("#132436")
-        self.ax2.plot(xs, list(deque((p["omega_x"] for p in []), maxlen=MAX_HISTORY)),
-                      color="#A8D8EA", label="Omega X")
+        self.ax2.plot(xs, list(self.rolls), color="#A8D8EA", label="Omega X"),
         self.ax2.set_title("Angular Rate (rad/s)", color="white")
         self.ax2.set_facecolor("#132436")
         self.canvas.draw()
         
     def _send(self, cmd: str):
-        """Send a command byte to the flight computer."""
-        print(f"CMD -> {cmd}") # Extend: write cmd.encode() to serial
+        print(f"CMD -> {cmd}")
     
     def run(self):
         self.root.mainloop()

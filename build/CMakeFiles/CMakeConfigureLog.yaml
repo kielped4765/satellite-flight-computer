@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:207 (message)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       The target system is: Generic -  - arm
       The host system is: Windows - 10.0.19045 - AMD64
@@ -13,7 +13,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
     description: "Program used to build from build.ninja files."
@@ -30,13 +30,9 @@ events:
       - "ninja"
       - "samu"
     candidate_directories:
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/"
@@ -44,46 +40,129 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/msys64/usr/bin/ninja-build.com"
-      - "C:/msys64/usr/bin/ninja-build.exe"
-      - "C:/msys64/usr/bin/ninja-build"
-      - "C:/msys64/usr/bin/ninja.com"
-    found: "C:/msys64/usr/bin/ninja.exe"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja-build.com"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja-build.exe"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja-build"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja.com"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja.exe"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/samu.com"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/samu.exe"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/samu"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja-build.com"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja-build.exe"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja-build"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja.com"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja.exe"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/samu.com"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/samu.exe"
+      - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/samu"
+      - "C:/arm-toolchain/arm-none-eabi/bin/ninja-build.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/ninja-build.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/ninja-build"
+      - "C:/arm-toolchain/arm-none-eabi/bin/ninja.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/ninja.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/ninja"
+      - "C:/arm-toolchain/arm-none-eabi/bin/samu.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/samu.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/samu"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/ninja-build.com"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/ninja-build.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/ninja-build"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/ninja.com"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/ninja.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/ninja"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/samu.com"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/samu.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/samu"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/ninja-build.com"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/ninja-build.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/ninja-build"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/ninja.com"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/ninja.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/ninja"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/samu.com"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/samu.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Python313/samu"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/ninja-build.com"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/ninja-build.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/ninja-build"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/ninja.com"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/ninja.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/ninja"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/samu.com"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/samu.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Python/Launcher/samu"
+      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/ninja-build.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/ninja-build.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/ninja-build"
+      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/ninja.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/ninja.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/ninja"
+      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/samu.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/samu.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WindowsApps/samu"
+      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/ninja-build.com"
+      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/ninja-build.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/ninja-build"
+      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/ninja.com"
+      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/ninja.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/ninja"
+      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/samu.com"
+      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/samu.exe"
+      - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/samu"
+      - "C:/Users/peder/.dotnet/tools/ninja-build.com"
+      - "C:/Users/peder/.dotnet/tools/ninja-build.exe"
+      - "C:/Users/peder/.dotnet/tools/ninja-build"
+      - "C:/Users/peder/.dotnet/tools/ninja.com"
+      - "C:/Users/peder/.dotnet/tools/ninja.exe"
+      - "C:/Users/peder/.dotnet/tools/ninja"
+      - "C:/Users/peder/.dotnet/tools/samu.com"
+      - "C:/Users/peder/.dotnet/tools/samu.exe"
+      - "C:/Users/peder/.dotnet/tools/samu"
+      - "C:/Users/peder/AppData/Local/Python/bin/ninja-build.com"
+      - "C:/Users/peder/AppData/Local/Python/bin/ninja-build.exe"
+      - "C:/Users/peder/AppData/Local/Python/bin/ninja-build"
+      - "C:/Users/peder/AppData/Local/Python/bin/ninja.com"
+      - "C:/Users/peder/AppData/Local/Python/bin/ninja.exe"
+      - "C:/Users/peder/AppData/Local/Python/bin/ninja"
+      - "C:/Users/peder/AppData/Local/Python/bin/samu.com"
+      - "C:/Users/peder/AppData/Local/Python/bin/samu.exe"
+      - "C:/Users/peder/AppData/Local/Python/bin/samu"
+      - "C:/Program Files/CMake/bin/ninja-build.com"
+      - "C:/Program Files/CMake/bin/ninja-build.exe"
+      - "C:/Program Files/CMake/bin/ninja-build"
+      - "C:/Program Files/CMake/bin/ninja.com"
+      - "C:/Program Files/CMake/bin/ninja.exe"
+      - "C:/Program Files/CMake/bin/ninja"
+      - "C:/Program Files/CMake/bin/samu.com"
+      - "C:/Program Files/CMake/bin/samu.exe"
+      - "C:/Program Files/CMake/bin/samu"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja-build.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja-build.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja-build"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.com"
+    found: "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
@@ -92,7 +171,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -111,58 +190,45 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe 
+      Compiler: C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc.exe 
       Build flags: 
       Id flags:  
       
       The output was:
       1
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-exit.o): in function `exit':
+      C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-exit.o): in function `exit':
       exit.c:(.text.exit+0x28): undefined reference to `_exit'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-closer.o): in function `_close_r':
+      C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-closer.o): in function `_close_r':
       closer.c:(.text._close_r+0x18): undefined reference to `_close'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
       lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-readr.o): in function `_read_r':
+      C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-readr.o): in function `_read_r':
       readr.c:(.text._read_r+0x24): undefined reference to `_read'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-writer.o): in function `_write_r':
+      C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-writer.o): in function `_write_r':
       writer.c:(.text._write_r+0x24): undefined reference to `_write'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
       sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
       collect2.exe: error: ld returned 1 exit status
       
@@ -175,7 +241,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -194,42 +260,29 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe 
+      Compiler: C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc.exe 
       Build flags: 
       Id flags: -c 
       
@@ -247,7 +300,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -263,12 +316,7 @@ events:
       - "arm-none-eabi-ar"
       - "ar"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -278,49 +326,33 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ar.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ar.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-ar.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-ar.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -336,12 +368,7 @@ events:
       - "arm-none-eabi-ranlib"
       - "ranlib"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -351,49 +378,33 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ranlib.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ranlib.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-ranlib.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -409,12 +420,7 @@ events:
       - "arm-none-eabi-strip"
       - "strip"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -424,49 +430,33 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-strip.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-strip.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-strip.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-strip.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -482,12 +472,7 @@ events:
       - "arm-none-eabi-ld"
       - "ld"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -497,49 +482,33 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ld.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ld.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-ld.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-ld.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -555,12 +524,7 @@ events:
       - "arm-none-eabi-nm"
       - "nm"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -570,49 +534,33 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-nm.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-nm.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-nm.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-nm.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -628,12 +576,7 @@ events:
       - "arm-none-eabi-objdump"
       - "objdump"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -643,49 +586,33 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objdump.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objdump.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-objdump.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-objdump.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -701,12 +628,7 @@ events:
       - "arm-none-eabi-readelf"
       - "readelf"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -716,49 +638,33 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-readelf.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-readelf.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-readelf.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-readelf.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -774,12 +680,7 @@ events:
       - "arm-none-eabi-dlltool"
       - "dlltool"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -789,31 +690,13 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-dlltool.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-dlltool.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-dlltool"
-      - "C:/msys64/usr/bin/arm-none-eabi-dlltool.com"
-      - "C:/msys64/usr/bin/arm-none-eabi-dlltool.exe"
-      - "C:/msys64/usr/bin/arm-none-eabi-dlltool"
-      - "C:/Users/peder/bin/arm-none-eabi-dlltool.com"
-      - "C:/Users/peder/bin/arm-none-eabi-dlltool.exe"
-      - "C:/Users/peder/bin/arm-none-eabi-dlltool"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-dlltool.com"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-dlltool.exe"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-dlltool"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-dlltool.com"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-dlltool.exe"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-dlltool"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-dlltool.com"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-dlltool.exe"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-dlltool"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-dlltool.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-dlltool.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-dlltool"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-dlltool.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-dlltool.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-dlltool"
@@ -841,42 +724,18 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-dlltool.com"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-dlltool.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-dlltool"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-dlltool.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-dlltool.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-dlltool"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-dlltool.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-dlltool.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-dlltool"
-      - "C:/arm-none-eabi-dlltool.com"
-      - "C:/arm-none-eabi-dlltool.exe"
-      - "C:/arm-none-eabi-dlltool"
-      - "C:/arm-toolchain/bin/arm-none-eabi-dlltool.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-dlltool.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-dlltool"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-dlltool.com"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-dlltool.exe"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-dlltool"
       - "C:/Program Files/CMake/bin/arm-none-eabi-dlltool.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-dlltool.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-dlltool"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/dlltool.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/dlltool.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/dlltool"
-      - "C:/msys64/usr/bin/dlltool.com"
-      - "C:/msys64/usr/bin/dlltool.exe"
-      - "C:/msys64/usr/bin/dlltool"
-      - "C:/Users/peder/bin/dlltool.com"
-      - "C:/Users/peder/bin/dlltool.exe"
-      - "C:/Users/peder/bin/dlltool"
-      - "C:/Program Files/Git/mingw64/bin/dlltool.com"
-      - "C:/Program Files/Git/mingw64/bin/dlltool.exe"
-      - "C:/Program Files/Git/mingw64/bin/dlltool"
-      - "C:/Program Files/Git/usr/local/bin/dlltool.com"
-      - "C:/Program Files/Git/usr/local/bin/dlltool.exe"
-      - "C:/Program Files/Git/usr/local/bin/dlltool"
-      - "C:/Program Files/Git/usr/bin/dlltool.com"
-      - "C:/Program Files/Git/usr/bin/dlltool.exe"
-      - "C:/Program Files/Git/usr/bin/dlltool"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-dlltool.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-dlltool.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-dlltool"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-dlltool.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-dlltool.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-dlltool"
+      - "C:/arm-toolchain/arm-none-eabi/bin/dlltool.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/dlltool.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/dlltool"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
@@ -904,59 +763,37 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/dlltool.com"
       - "C:/Users/peder/AppData/Local/Python/bin/dlltool.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/dlltool"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/dlltool.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/dlltool.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/dlltool"
-      - "C:/Program Files/Git/usr/bin/core_perl/dlltool.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/dlltool.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/dlltool"
-      - "C:/dlltool.com"
-      - "C:/dlltool.exe"
-      - "C:/dlltool"
-      - "C:/arm-toolchain/bin/dlltool.com"
-      - "C:/arm-toolchain/bin/dlltool.exe"
-      - "C:/arm-toolchain/bin/dlltool"
-      - "C:/msys64/mingw64/bin/dlltool.com"
-      - "C:/msys64/mingw64/bin/dlltool.exe"
-      - "C:/msys64/mingw64/bin/dlltool"
       - "C:/Program Files/CMake/bin/dlltool.com"
       - "C:/Program Files/CMake/bin/dlltool.exe"
       - "C:/Program Files/CMake/bin/dlltool"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/dlltool.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/dlltool.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/dlltool"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/dlltool.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/dlltool.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/dlltool"
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -972,12 +809,7 @@ events:
       - "arm-none-eabi-addr2line"
       - "addr2line"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -987,49 +819,33 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-addr2line.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-addr2line.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-addr2line.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-addr2line.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -1045,12 +861,7 @@ events:
       - "arm-none-eabi-tapi"
       - "tapi"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -1060,31 +871,13 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-tapi.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-tapi.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-tapi"
-      - "C:/msys64/usr/bin/arm-none-eabi-tapi.com"
-      - "C:/msys64/usr/bin/arm-none-eabi-tapi.exe"
-      - "C:/msys64/usr/bin/arm-none-eabi-tapi"
-      - "C:/Users/peder/bin/arm-none-eabi-tapi.com"
-      - "C:/Users/peder/bin/arm-none-eabi-tapi.exe"
-      - "C:/Users/peder/bin/arm-none-eabi-tapi"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-tapi.com"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-tapi.exe"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-tapi"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-tapi.com"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-tapi.exe"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-tapi"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-tapi.com"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-tapi.exe"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-tapi"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-tapi.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-tapi.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-tapi"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-tapi.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-tapi.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-tapi"
@@ -1112,42 +905,18 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-tapi.com"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-tapi.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-tapi"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-tapi.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-tapi.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-tapi"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-tapi.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-tapi.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-tapi"
-      - "C:/arm-none-eabi-tapi.com"
-      - "C:/arm-none-eabi-tapi.exe"
-      - "C:/arm-none-eabi-tapi"
-      - "C:/arm-toolchain/bin/arm-none-eabi-tapi.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-tapi.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-tapi"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-tapi.com"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-tapi.exe"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-tapi"
       - "C:/Program Files/CMake/bin/arm-none-eabi-tapi.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-tapi.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-tapi"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/tapi.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/tapi.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/tapi"
-      - "C:/msys64/usr/bin/tapi.com"
-      - "C:/msys64/usr/bin/tapi.exe"
-      - "C:/msys64/usr/bin/tapi"
-      - "C:/Users/peder/bin/tapi.com"
-      - "C:/Users/peder/bin/tapi.exe"
-      - "C:/Users/peder/bin/tapi"
-      - "C:/Program Files/Git/mingw64/bin/tapi.com"
-      - "C:/Program Files/Git/mingw64/bin/tapi.exe"
-      - "C:/Program Files/Git/mingw64/bin/tapi"
-      - "C:/Program Files/Git/usr/local/bin/tapi.com"
-      - "C:/Program Files/Git/usr/local/bin/tapi.exe"
-      - "C:/Program Files/Git/usr/local/bin/tapi"
-      - "C:/Program Files/Git/usr/bin/tapi.com"
-      - "C:/Program Files/Git/usr/bin/tapi.exe"
-      - "C:/Program Files/Git/usr/bin/tapi"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-tapi.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-tapi.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-tapi"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-tapi.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-tapi.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-tapi"
+      - "C:/arm-toolchain/arm-none-eabi/bin/tapi.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/tapi.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/tapi"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
@@ -1175,59 +944,37 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/tapi.com"
       - "C:/Users/peder/AppData/Local/Python/bin/tapi.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/tapi"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/tapi.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/tapi.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/tapi"
-      - "C:/Program Files/Git/usr/bin/core_perl/tapi.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/tapi.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/tapi"
-      - "C:/tapi.com"
-      - "C:/tapi.exe"
-      - "C:/tapi"
-      - "C:/arm-toolchain/bin/tapi.com"
-      - "C:/arm-toolchain/bin/tapi.exe"
-      - "C:/arm-toolchain/bin/tapi"
-      - "C:/msys64/mingw64/bin/tapi.com"
-      - "C:/msys64/mingw64/bin/tapi.exe"
-      - "C:/msys64/mingw64/bin/tapi"
       - "C:/Program Files/CMake/bin/tapi.com"
       - "C:/Program Files/CMake/bin/tapi.exe"
       - "C:/Program Files/CMake/bin/tapi"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/tapi.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/tapi.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/tapi"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/tapi.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/tapi.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1245,12 +992,7 @@ events:
       - "arm-none-eabi-gcc-ar15"
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -1260,31 +1002,13 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.2"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.2"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ar-15.2"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ar-15.2"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ar-15.2"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ar-15.2"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.2.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.2.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.2"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15.2.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15.2.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15.2"
@@ -1312,42 +1036,18 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ar-15.2.com"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ar-15.2.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ar-15.2"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-15.2"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ar-15.2"
-      - "C:/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/arm-none-eabi-gcc-ar-15.2"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.2"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.2.com"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.2.exe"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.2"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.2.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.2.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.2"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar-15"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.com"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar-15"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ar-15.com"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ar-15"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ar-15.com"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ar-15"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ar-15.com"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ar-15"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ar-15.com"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ar-15"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ar-15.2.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ar-15.2.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ar-15.2"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15.2.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15.2.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15.2"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar-15.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar-15"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15"
@@ -1375,42 +1075,18 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ar-15.com"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ar-15.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ar-15"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-15.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-15"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ar-15.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ar-15"
-      - "C:/arm-none-eabi-gcc-ar-15.com"
-      - "C:/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/arm-none-eabi-gcc-ar-15"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar-15"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.com"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15.exe"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar-15"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar-15"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar15.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar15.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar15"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar15.com"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar15.exe"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ar15"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ar15.com"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ar15.exe"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ar15"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ar15.com"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ar15.exe"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ar15"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ar15.com"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ar15.exe"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ar15"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ar15.com"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ar15.exe"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ar15"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ar-15.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ar-15.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ar-15"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar15.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar15.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar15"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar15.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar15.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar15"
@@ -1438,60 +1114,38 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ar15.com"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ar15.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ar15"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ar15.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ar15.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ar15"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ar15.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ar15.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ar15"
-      - "C:/arm-none-eabi-gcc-ar15.com"
-      - "C:/arm-none-eabi-gcc-ar15.exe"
-      - "C:/arm-none-eabi-gcc-ar15"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar15.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar15.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ar15"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar15.com"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar15.exe"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ar15"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar15.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar15.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ar15"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ar.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ar15.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ar15.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ar15"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar15.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar15.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar15"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ar.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1509,12 +1163,7 @@ events:
       - "arm-none-eabi-gcc-ranlib15"
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/"
-      - "C:/msys64/usr/bin/"
-      - "C:/Users/peder/bin/"
-      - "C:/Program Files/Git/mingw64/bin/"
-      - "C:/Program Files/Git/usr/local/bin/"
-      - "C:/Program Files/Git/usr/bin/"
+      - "C:/arm-toolchain/arm-none-eabi/bin/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Users/peder/AppData/Local/Programs/Python/Python313/Scripts/"
@@ -1524,31 +1173,13 @@ events:
       - "C:/Users/peder/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/peder/.dotnet/tools/"
       - "C:/Users/peder/AppData/Local/Python/bin/"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/"
-      - "C:/Program Files/Git/usr/bin/core_perl/"
-      - "C:/"
-      - "C:/arm-toolchain/bin/"
-      - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.2.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15.2.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15.2.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15.2"
@@ -1576,42 +1207,18 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ranlib-15.2.com"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.2.com"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.2.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.2.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib-15"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ranlib-15"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ranlib-15"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ranlib-15"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ranlib-15"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ranlib-15.2.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ranlib-15.2.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ranlib-15.2"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15.2.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15.2.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15.2"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib-15"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15"
@@ -1639,42 +1246,18 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ranlib-15.com"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ranlib-15.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ranlib-15"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-15"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-15"
-      - "C:/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/arm-none-eabi-gcc-ranlib-15"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib-15"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.com"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15.exe"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib-15"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib-15"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib15"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/msys64/usr/bin/arm-none-eabi-gcc-ranlib15"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/Users/peder/bin/arm-none-eabi-gcc-ranlib15"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/Program Files/Git/mingw64/bin/arm-none-eabi-gcc-ranlib15"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/Program Files/Git/usr/local/bin/arm-none-eabi-gcc-ranlib15"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/Program Files/Git/usr/bin/arm-none-eabi-gcc-ranlib15"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ranlib-15.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ranlib-15.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ranlib-15"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib15.com"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib15.exe"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib15"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib15.com"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib15.exe"
       - "C:/Users/peder/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib15"
@@ -1702,65 +1285,43 @@ events:
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ranlib15.com"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ranlib15.exe"
       - "C:/Users/peder/AppData/Local/Python/bin/arm-none-eabi-gcc-ranlib15"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/Program Files/Git/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib15"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/Program Files/Git/usr/bin/core_perl/arm-none-eabi-gcc-ranlib15"
-      - "C:/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/arm-none-eabi-gcc-ranlib15"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/arm-toolchain/bin/arm-none-eabi-gcc-ranlib15"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib15.com"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib15.exe"
-      - "C:/msys64/mingw64/bin/arm-none-eabi-gcc-ranlib15"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib15.com"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib15.exe"
       - "C:/Program Files/CMake/bin/arm-none-eabi-gcc-ranlib15"
-      - "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib.com"
-    found: "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ranlib15.com"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ranlib15.exe"
+      - "C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/arm-none-eabi-gcc-ranlib15"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib15.com"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib15.exe"
+      - "C:/Users/peder/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib15"
+      - "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib.com"
+    found: "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\local\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Program Files\\Git\\mingw64\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\bin"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "C:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\usr\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\arm-toolchain\\arm-none-eabi\\bin"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\peder\\.dotnet\\tools"
         - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
-        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
-        - "C:\\"
-        - "C:\\arm-toolchain\\bin"
-        - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "c:\\Users\\peder\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "try_compile-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-oly5ze"
-      binary: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-oly5ze"
+      source: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-84y969"
+      binary: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-84y969"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1769,416 +1330,42 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-oly5ze'
+        Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-84y969'
         
-        Run Build Command(s): C:/msys64/usr/bin/ninja.exe -v cmTC_4ffd9
-        [1/2] C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_4ffd9.dir/CMakeCCompilerABI.c.obj -c 'C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c'
-        FAILED: [code=127] CMakeFiles/cmTC_4ffd9.dir/CMakeCCompilerABI.c.obj 
-        C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_4ffd9.dir/CMakeCCompilerABI.c.obj -c 'C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c'
-        /bin/sh: line 1: C:toolchainsarm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabibinarm-none-eabi-gcc.exe: command not found
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 127
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
-      - "CMakeLists.txt:16 (project)"
-    checks:
-      - "Check for working C compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe"
-    directories:
-      source: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-sfxb9l"
-      binary: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-sfxb9l"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_COMPILER_WORKS"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-sfxb9l'
-        
-        Run Build Command(s): C:/msys64/usr/bin/ninja.exe -v cmTC_8ef45
-        [1/2] C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe    -o CMakeFiles/cmTC_8ef45.dir/testCCompiler.c.obj -c 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-sfxb9l/testCCompiler.c'
-        FAILED: [code=127] CMakeFiles/cmTC_8ef45.dir/testCCompiler.c.obj 
-        C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe    -o CMakeFiles/cmTC_8ef45.dir/testCCompiler.c.obj -c 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-sfxb9l/testCCompiler.c'
-        /bin/sh: line 1: C:toolchainsarm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabibinarm-none-eabi-gcc.exe: command not found
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 127
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Git\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\peder\\.dotnet\\tools"
-        - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/SatelliteFC"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      1
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-exit.o): in function `exit':
-      exit.c:(.text.exit+0x28): undefined reference to `_exit'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-closer.o): in function `_close_r':
-      closer.c:(.text._close_r+0x18): undefined reference to `_close'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
-      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-readr.o): in function `_read_r':
-      readr.c:(.text._read_r+0x24): undefined reference to `_read'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-writer.o): in function `_write_r':
-      writer.c:(.text._write_r+0x24): undefined reference to `_write'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
-      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
-      collect2.exe: error: ld returned 1 exit status
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Git\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\peder\\.dotnet\\tools"
-        - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/SatelliteFC"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe 
-      Build flags: 
-      Id flags: -c 
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
-      
-      The C compiler identification is GNU, found in:
-        C:/Users/peder/satellite-flight-computer/build/CMakeFiles/4.3.0-rc1/CompilerIdC/CMakeCCompilerId.o
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-b7xkwt"
-      binary: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-b7xkwt"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-b7xkwt'
-        
-        Run Build Command(s): C:/msys64/usr/bin/ninja.exe -v cmTC_b2e0c
-        [1/2] C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_b2e0c.dir/CMakeCCompilerABI.c.obj -c 'C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c'
-        FAILED: [code=127] CMakeFiles/cmTC_b2e0c.dir/CMakeCCompilerABI.c.obj 
-        C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_b2e0c.dir/CMakeCCompilerABI.c.obj -c 'C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c'
-        /bin/sh: line 1: C:toolchainsarm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabibinarm-none-eabi-gcc.exe: command not found
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 127
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
-      - "CMakeLists.txt:16 (project)"
-    checks:
-      - "Check for working C compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe"
-    directories:
-      source: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-bj8lhb"
-      binary: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-bj8lhb"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_COMPILER_WORKS"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-bj8lhb'
-        
-        Run Build Command(s): C:/msys64/usr/bin/ninja.exe -v cmTC_6f3bd
-        [1/2] C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe    -o CMakeFiles/cmTC_6f3bd.dir/testCCompiler.c.obj -c 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-bj8lhb/testCCompiler.c'
-        FAILED: [code=127] CMakeFiles/cmTC_6f3bd.dir/testCCompiler.c.obj 
-        C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe    -o CMakeFiles/cmTC_6f3bd.dir/testCCompiler.c.obj -c 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-bj8lhb/testCCompiler.c'
-        /bin/sh: line 1: C:toolchainsarm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabibinarm-none-eabi-gcc.exe: command not found
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 127
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\peder\\.dotnet\\tools"
-        - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/SatelliteFC"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      1
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-exit.o): in function `exit':
-      exit.c:(.text.exit+0x28): undefined reference to `_exit'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-closer.o): in function `_close_r':
-      closer.c:(.text._close_r+0x18): undefined reference to `_close'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
-      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-readr.o): in function `_read_r':
-      readr.c:(.text._read_r+0x24): undefined reference to `_read'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-writer.o): in function `_write_r':
-      writer.c:(.text._write_r+0x24): undefined reference to `_write'
-      C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
-      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
-      collect2.exe: error: ld returned 1 exit status
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\peder\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Git\\bin"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\peder\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\peder\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\peder\\.dotnet\\tools"
-        - "C:\\Users\\peder\\AppData\\Local\\Python\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/SatelliteFC"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe 
-      Build flags: 
-      Id flags: -c 
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
-      
-      The C compiler identification is GNU, found in:
-        C:/Users/peder/satellite-flight-computer/build/CMakeFiles/4.3.0-rc1/CompilerIdC/CMakeCCompilerId.o
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-31freu"
-      binary: "C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-31freu"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-31freu'
-        
-        Run Build Command(s): "C:/Program Files/Ninja/ninja.exe" -v cmTC_f2fe2
-        [1/2] C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"
+        Run Build Command(s): C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_ba5ec
+        [1/2] C:\\arm-toolchain\\arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"
         Using built-in specs.
-        COLLECT_GCC=C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe
+        COLLECT_GCC=C:\\arm-toolchain\\arm-none-eabi\\bin\\arm-none-eabi-gcc.exe
         Target: arm-none-eabi
         Configured with: /data/jenkins/workspace/GNU-toolchain/arm-15/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://gitlab.arm.com/tooling/gnu-devtools-for-arm/-/issues/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=i686-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)'
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f2fe2.dir/'
-         C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1.exe -quiet -v -iprefix C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f2fe2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o C:\\Users\\peder\\AppData\\Local\\Temp\\ccJkdLB1.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_ba5ec.dir/'
+         C:/arm-toolchain/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1.exe -quiet -v -iprefix C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot C:/arm-toolchain/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ba5ec.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o C:\\Users\\peder\\AppData\\Local\\Temp\\ccyoGb51.s
         GNU C23 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)
         	compiled by GNU C version 13-win32, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include"
-        ignoring nonexistent directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/15.2.1/../../../../include"
-        ignoring duplicate directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include-fixed"
-        ignoring duplicate directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include"
-        ignoring duplicate directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../arm-none-eabi/include"
+        ignoring duplicate directory "C:/arm-toolchain/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include"
+        ignoring nonexistent directory "C:/arm-toolchain/arm-none-eabi/bin/../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/15.2.1/../../../../include"
+        ignoring duplicate directory "C:/arm-toolchain/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include-fixed"
+        ignoring duplicate directory "C:/arm-toolchain/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "C:/arm-toolchain/arm-none-eabi/bin/../arm-none-eabi/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include
-         C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed
-         C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include
+         C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include
+         C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed
+         C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 06ab445c59ba8f89bbf09b9a069e4cf7
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f2fe2.dir/'
-         C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj C:\\Users\\peder\\AppData\\Local\\Temp\\ccJkdLB1.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_ba5ec.dir/'
+         C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj C:\\Users\\peder\\AppData\\Local\\Temp\\ccyoGb51.s
         GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203
-        COMPILER_PATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/;C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../libexec/gcc/;C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/;C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/;C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/;C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.'
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_f2fe2.a && C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_f2fe2.a  CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj && C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_f2fe2.a && cd ."
+        COMPILER_PATH=C:/arm-toolchain/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/;C:/arm-toolchain/arm-none-eabi/bin/../libexec/gcc/;C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/;C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/;C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/;C:/arm-toolchain/arm-none-eabi/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_ba5ec.a && C:\\arm-toolchain\\arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_ba5ec.a  CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj && C:\\arm-toolchain\\arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_ba5ec.a && cd ."
         
       exitCode: 0
   -
@@ -2186,19 +1373,19 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include]
-          add: [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed]
-          add: [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
+          add: [C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include]
+          add: [C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed]
+          add: [C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
         end of search list found
-        collapse include dir [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include] ==> [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/include]
-        collapse include dir [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed] ==> [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/include-fixed]
-        collapse include dir [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include] ==> [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include]
-        implicit include dirs: [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/include;C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/include-fixed;C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include]
+        collapse include dir [C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include] ==> [C:/arm-toolchain/arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/include]
+        collapse include dir [C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed] ==> [C:/arm-toolchain/arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/include-fixed]
+        collapse include dir [C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include] ==> [C:/arm-toolchain/arm-none-eabi/arm-none-eabi/include]
+        implicit include dirs: [C:/arm-toolchain/arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/include;C:/arm-toolchain/arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/include-fixed;C:/arm-toolchain/arm-none-eabi/arm-none-eabi/include]
       
       
   -
@@ -2206,52 +1393,52 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-31freu']
+        ignore line: [Change Dir: 'C:/Users/peder/satellite-flight-computer/build/CMakeFiles/CMakeScratch/TryCompile-84y969']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/Ninja/ninja.exe" -v cmTC_f2fe2]
-        ignore line: [[1/2] C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): C:/Users/peder/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_ba5ec]
+        ignore line: [[1/2] C:\\arm-toolchain\\arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -v -o CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe]
+        ignore line: [COLLECT_GCC=C:\\arm-toolchain\\arm-none-eabi\\bin\\arm-none-eabi-gcc.exe]
         ignore line: [Target: arm-none-eabi]
         ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-15/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://gitlab.arm.com/tooling/gnu-devtools-for-arm/-/issues/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=i686-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)']
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f2fe2.dir/']
-        ignore line: [ C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1.exe -quiet -v -iprefix C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f2fe2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o C:\\Users\\peder\\AppData\\Local\\Temp\\ccJkdLB1.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_ba5ec.dir/']
+        ignore line: [ C:/arm-toolchain/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1.exe -quiet -v -iprefix C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot C:/arm-toolchain/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ba5ec.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o C:\\Users\\peder\\AppData\\Local\\Temp\\ccyoGb51.s]
         ignore line: [GNU C23 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 13-win32  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include"]
-        ignore line: [ignoring nonexistent directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/15.2.1/../../../../include"]
-        ignore line: [ignoring duplicate directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include-fixed"]
-        ignore line: [ignoring duplicate directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include"]
-        ignore line: [ignoring duplicate directory "C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "C:/arm-toolchain/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include"]
+        ignore line: [ignoring nonexistent directory "C:/arm-toolchain/arm-none-eabi/bin/../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-15/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/15.2.1/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/arm-toolchain/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/arm-toolchain/arm-none-eabi/lib/gcc/../../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "C:/arm-toolchain/arm-none-eabi/bin/../arm-none-eabi/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include]
-        ignore line: [ C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed]
-        ignore line: [ C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
+        ignore line: [ C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include]
+        ignore line: [ C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/include-fixed]
+        ignore line: [ C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 06ab445c59ba8f89bbf09b9a069e4cf7]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f2fe2.dir/']
-        ignore line: [ C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj C:\\Users\\peder\\AppData\\Local\\Temp\\ccJkdLB1.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_ba5ec.dir/']
+        ignore line: [ C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj C:\\Users\\peder\\AppData\\Local\\Temp\\ccyoGb51.s]
         ignore line: [GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203]
-        ignore line: [COMPILER_PATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/]
-        ignore line: [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../libexec/gcc/]
-        ignore line: [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/]
-        ignore line: [LIBRARY_PATH=C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/]
-        ignore line: [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/]
-        ignore line: [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/]
-        ignore line: [C:/toolchains/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_f2fe2.a && C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_f2fe2.a  CMakeFiles/cmTC_f2fe2.dir/CMakeCCompilerABI.c.obj && C:\\toolchains\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_f2fe2.a && cd ."]
+        ignore line: [COMPILER_PATH=C:/arm-toolchain/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/]
+        ignore line: [C:/arm-toolchain/arm-none-eabi/bin/../libexec/gcc/]
+        ignore line: [C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/]
+        ignore line: [C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/]
+        ignore line: [C:/arm-toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/]
+        ignore line: [C:/arm-toolchain/arm-none-eabi/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_ba5ec.a && C:\\arm-toolchain\\arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_ba5ec.a  CMakeFiles/cmTC_ba5ec.dir/CMakeCCompilerABI.c.obj && C:\\arm-toolchain\\arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_ba5ec.a && cd ."]
         ignore line: []
         ignore line: []
         implicit libs: []

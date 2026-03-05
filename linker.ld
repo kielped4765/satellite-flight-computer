@@ -2,52 +2,58 @@
 
 MEMORY
 {
-    FLASH (rx) : ORIGIN = 0x00000000, LENGTH = 256K
-    SRAM (rwx) : ORIGIN = 0x20000000, LENGTH = 64K
+    FLASH (rx)  : ORIGIN = 0x00000000, LENGTH = 256K
+    RAM   (rwx) : ORIGIN = 0x20000000, LENGTH = 64K  /* renamed SRAM -> RAM */
 }
 
-/* Initial stack pointer = top of SRAM (stack grows downward) */
-PROVIDE ( _estack = ORIGIN(SRAM) + LENGTH(SRAM) );
+PROVIDE(_estack = ORIGIN(RAM) + LENGTH(RAM));
 
 ENTRY(Reset_Handler)
 
 SECTIONS
 {
-
-     .text :
+    .text :
     {
-        KEEP(*(.isr_vector)) /* Vector table must be first in Flash */
+        KEEP(*(.isr_vector))
         *(.text)
         *(.text*)
         *(.rodata)
         *(.rodata*)
-        _etext = .; /* End of Flash content */
- } > FLASH
+        KEEP(*(.init))
+        KEEP(*(.fini))
+        . = ALIGN(4);
+        _etext = .;
+    } > FLASH
 
-    /* .data: initialised globals — stored in Flash, copied to SRAM at startup */
-    .data : AT(_etext)
+    /* Load address of .data — used by startup to copy Flash -> RAM */
+    _sidata = LOADADDR(.data);
+
+    .data :
     {
+        . = ALIGN(4);
         _sdata = .;
         *(.data)
         *(.data*)
+        . = ALIGN(4);
         _edata = .;
-    } > SRAM
- 
-    /* .bss: zero-initialised globals — just zeroed in SRAM, no Flash storage */
+    } > RAM AT > FLASH
+
     .bss :
     {
+        . = ALIGN(4);
         _sbss = .;
         *(.bss)
         *(.bss*)
         *(COMMON)
+        . = ALIGN(4);
         _ebss = .;
-    } > SRAM
-    
+    } > RAM
+
     ._user_heap_stack :
     {
         . = ALIGN(8);
-        PROVIDE ( end = . );
+        PROVIDE(end = .);
         . = . + 0x400;
         . = ALIGN(8);
-    } > SRAM
+    } > RAM
 }
