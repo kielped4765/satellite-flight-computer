@@ -1,0 +1,7 @@
+build/
+*.elf
+*.o
+*.obj
+*.d
+__pycache__/
+.ninja_*
