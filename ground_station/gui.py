@@ -122,34 +122,40 @@ class GroundStation:
             self._tick()
 
     def _rx(self):
-        print("_rx thread started")
-        try:
-            import socket
-            sock = socket.create_connection(('localhost', 5555), timeout=5)
-            print("Connected!")
-            sock.settimeout(1.0)
-            buf = bytearray()
-            while self.running:
-                try:
-                    data = sock.recv(256)
-                    if data:
-                        buf.extend(data)
-                        print(f"buf size: {len(buf)}")
-                        while len(buf) >= 46:  # TLM_SIZE = 46 bytes
-                            pkt, consumed = find_packet(buf)
-                            if pkt:
-                                print(f"PKT roll={pkt['roll']:.2f}")
-                                self.q.put(pkt)
-                                buf = buf[consumed:]
-                            else:
-                                buf = buf[consumed:]
-                                break
-                except socket.timeout:
-                    continue
-            sock.close()
-        except Exception as e:
-            print(f"Socket error: {e}")
-            self.running = False
+        """Background thread: generate fake telemetry packets for demo."""
+        import struct, math, time
+        TLM_FORMAT = "<HHIffffffBBhH"
+        TLM_MAGIC  = 0xA5C3
+        seq = 0
+        t   = 0.0
+
+        while self.running:
+            print(f"_rx loop running, seq={seq}")
+            roll  = 30.0 * math.sin(t * 0.1)
+            pitch = 20.0 * math.cos(t * 0.07)
+            yaw   = 45.0 * math.sin(t * 0.05)
+            ox    = 0.5  * math.sin(t * 0.1)
+            oy    = 0.3  * math.cos(t * 0.07)
+            oz    = 0.15 * math.sin(t * 0.05)
+
+            raw = struct.pack(TLM_FORMAT,
+                TLM_MAGIC, seq, int(t * 1000),
+                roll, pitch, yaw,
+                ox, oy, oz,
+                3, 0, 2350, 0)
+
+            csum = 0
+            for b in raw[:-2]: csum ^= b
+            raw = raw[:-2] + struct.pack("<H", csum)
+
+            buf = bytearray(raw)
+            pkt, consumed = find_packet(buf)
+            if pkt and not self.q.full():
+                self.q.put(pkt)
+
+            seq += 1
+            t   += 1.0
+            time.sleep(1)
             
     def _tick(self):
         """Main thread: drain queue, update labels and plot every 500 ms."""
@@ -163,6 +169,7 @@ class GroundStation:
             print(f"Tick error: {e}")
  
     def _update(self, pkt):
+        print(f"Updating with packet: roll={pkt['roll']:.2f}")
         self.pkt_count += 1
         self.times.append(pkt["timestamp_ms"] / 1000.0)
         self.rolls.append(pkt["roll"])

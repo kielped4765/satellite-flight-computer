@@ -4,10 +4,8 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR arm)
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
-set(CMAKE_C_COMPILER
-    "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-gcc.exe")
-set(CMAKE_OBJCOPY
-    "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-objcopy.exe")
+set(CMAKE_C_COMPILER   arm-none-eabi-gcc)
+set(CMAKE_OBJCOPY      arm-none-eabi-objcopy)
 
 project(SatelliteFC C)
 

@@ -4,7 +4,7 @@ TLM_MAGIC = 0xA5C3
 TLM_FORMAT = "<HHIffffffBBhH" # little-endian packed — matches TelemetryPacket_t
 TLM_SIZE = struct.calcsize(TLM_FORMAT) # 46 bytes
 
-MODES = {0: "SAFE", 1: "DETUMBLE", 2: "NADIR", 3: "NORMAL"}
+MODES = {0: "SAFE", 1: "DETUMBLE", 2: "NADIR", 3: "NOMINAL"}
 FIELDS = ["magic","sequence","timestamp_ms",
           "roll","pitch","yaw",
           "omega_x","omega_y","omega_z",
