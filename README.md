@@ -163,3 +163,17 @@ Attitude plot draws live lines
 Mode shows NOMINAL
 Faults show NOMINAL
 Packet count increments every second
+
+
+## Docker Hub setup & Test
+
+Pre-Built images are pushed and available on docker hub:
+
+docker pull kielped4765/satellite-firmware:latest
+docker pull kielped4765/satellite-groundstation:latest
+
+Then run with commands:
+
+docker-compose up
+
+Open browser at http://localhost:6080/vnc.html to view GUI
