@@ -1,0 +1,20 @@
+# Excluding any files the firmware does not need
+# These files are useful but for the software/GUI not the firmware QEMU or ARM
+
+build/
+
+tests/
+
+__pycache__/
+
+*.pyc
+
+.pytest_cache/
+
+.git/
+
+docker/
+
+*.md
+
+ground_station/
