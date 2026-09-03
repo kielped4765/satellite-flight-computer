@@ -20,7 +20,7 @@ RUN pip install matplotlib pyserial pytest
 # Copy only the ground station folder which includes gui.py and telemetry_parser.py
 COPY ground_station/ /app/ground_station/
 
-COPY docker/groundstation/start.sh /app/start.sh
+COPY groundstation/start.sh /app/start.sh
 
 RUN chmod +x /app/start.sh
 
