@@ -177,3 +177,36 @@ Then run with commands:
 docker-compose up
 
 Open browser at http://localhost:6080/vnc.html to view GUI
+
+## Azure Deployment
+
+The ground station GUI is deployed to Azure Container Instances and accessible publicly.
+
+### Public Access
+- **URL:** http://satellite-kiel.eastus.azurecontainer.io:6080/vnc.html
+- **IP:** 20.75.152.132
+- **Port:** 6080
+
+Open the URL in any browser and click **Connect** to view the live ground station dashboard.
+
+### Azure Details
+- **Resource Group:** satellite-rg
+- **Container:** satellite-flight-computer
+- **Image:** kielped4765/satellite-groundstation:latest
+- **Region:** East US
+- **CPU:** 1 vCPU
+- **Memory:** 1 GB
+
+### Managing the Deployment
+
+**Check status:**
+az container show --resource-group satellite-rg --name satellite-flight-computer --query instanceView.state
+
+**View logs:**
+az container logs --resource-group satellite-rg --name satellite-flight-computer
+
+**Stop the container:**
+az container stop --resource-group satellite-rg --name satellite-flight-computer
+
+**Start the container:**
+az container start --resource-group satellite-rg --name satellite-flight-computer
