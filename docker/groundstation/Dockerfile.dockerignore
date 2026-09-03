@@ -1,0 +1,23 @@
+# Excluding any files the groundstation does not need.
+
+build/
+
+tests/
+
+__pycache__/
+
+*.pyc
+
+.pytest_cache/
+
+.git/
+
+docker/
+
+*.md
+
+src/
+
+FreeRTOS/
+
+linker.id

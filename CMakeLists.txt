@@ -53,5 +53,5 @@ target_link_libraries(satellite_fc.elf PRIVATE m)
 add_custom_command(TARGET satellite_fc.elf POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} -O binary satellite_fc.elf satellite_fc.bin
     COMMAND ${CMAKE_OBJCOPY} -O ihex   satellite_fc.elf satellite_fc.hex
-    COMMAND "C:/arm-toolchain/arm-none-eabi/bin/arm-none-eabi-size.exe" satellite_fc.elf
+    COMMAND arm-none-eabi-size satellite_fc.elf
     COMMENT "Post-build: binary, hex, and size")
