@@ -8,13 +8,17 @@ RUN apt-get update && apt-get install -y \
     cmake \
     make \
     ninja-build \
-    qemu-system-arm
+    qemu-system-arm \
+    git
 
 # Sets the working directory for all commands to run from here
 WORKDIR /app
 
 # Copies all of our files from our source to our container
 COPY . /app
+
+# Initalizes FreeRTOS submodule if not already populated
+RUN git submodule update --init --recursive || true
 
 # Creates a new layer on our newly created image and executes on the files
 RUN cmake -B build -G "Ninja" && cmake --build build
