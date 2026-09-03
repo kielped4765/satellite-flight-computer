@@ -12,8 +12,6 @@ __pycache__/
 
 .git/
 
-docker/
-
 *.md
 
 src/
@@ -21,3 +19,4 @@ src/
 FreeRTOS/
 
 linker.id
+*.id
