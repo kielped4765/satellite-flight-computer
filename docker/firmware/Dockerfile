@@ -18,10 +18,13 @@ WORKDIR /app
 COPY . /app
 
 # Clone FreeRTOS directly — bypasses submodule issues
-RUN git clone --depth=1 https://github.com/FreeRTOS/FreeRTOS-Kernel.git /app/FreeRTOS
+RUN git clone --depth=1 \
+    --branch V11.1.0 \
+    https://github.com/FreeRTOS/FreeRTOS-Kernel.git \
+    /app/FreeRTOS/Source
 
 # Debug: verify FreeRTOS files exist
-RUN ls /app/FreeRTOS/Source/
+RUN ls /app/FreeRTOS/
 
 
 # Creates a new layer on our newly created image and executes on the files
