@@ -20,6 +20,10 @@ COPY . /app
 # Clone FreeRTOS directly — bypasses submodule issues
 RUN git clone --depth=1 https://github.com/FreeRTOS/FreeRTOS-Kernel.git /app/FreeRTOS
 
+# Debug: verify FreeRTOS files exist
+RUN ls /app/FreeRTOS/Source/
+
+
 # Creates a new layer on our newly created image and executes on the files
 RUN cmake -B build -G "Ninja" && cmake --build build
 
