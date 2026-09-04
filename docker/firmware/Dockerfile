@@ -14,11 +14,11 @@ RUN apt-get update && apt-get install -y \
 # Sets the working directory for all commands to run from here
 WORKDIR /app
 
-# Clone FreeRTOS directly — bypasses submodule issues
-RUN git clone --depth=1 https://github.com/FreeRTOS/FreeRTOS-Kernel.git FreeRTOS
-
 # Copies all of our files from our source to our container
 COPY . /app
+
+# Clone FreeRTOS directly — bypasses submodule issues
+RUN git clone --depth=1 https://github.com/FreeRTOS/FreeRTOS-Kernel.git /app/FreeRTOS
 
 # Creates a new layer on our newly created image and executes on the files
 RUN cmake -B build -G "Ninja" && cmake --build build
